@@ -11,4 +11,8 @@ public class User extends BaseModel {
     private String password;
     private String phone;
     private UserType userType;
+
+    public boolean isAdmin(){
+        return this.userType.equals(UserType.ADMIN);
+    }
 }
