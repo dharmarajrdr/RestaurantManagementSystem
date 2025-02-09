@@ -10,7 +10,7 @@ public class CustomerSession extends BaseModel{
     private User user;
     private CustomerSessionStatus customerSessionStatus;
 
-    public boolean isActive() {
-        return this.customerSessionStatus == CustomerSessionStatus.ACTIVE;
+    public boolean isActiveSession() {
+        return this.customerSessionStatus.equals(CustomerSessionStatus.ACTIVE);
     }
 }
