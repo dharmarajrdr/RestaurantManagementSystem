@@ -1,22 +1,12 @@
 package com.dharmaraj.restaurant_management_system.dtos;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class AddUserToWaitListResponseDto {
+    
     private int position;
     private ResponseStatus responseStatus;
-
-    public int getPosition() {
-        return position;
-    }
-
-    public void setPosition(int position) {
-        this.position = position;
-    }
-
-    public ResponseStatus getResponseStatus() {
-        return responseStatus;
-    }
-
-    public void setResponseStatus(ResponseStatus responseStatus) {
-        this.responseStatus = responseStatus;
-    }
 }

@@ -2,23 +2,13 @@ package com.dharmaraj.restaurant_management_system.models;
 
 import java.util.Map;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class Order extends BaseModel{
+
     private CustomerSession customerSession;
     private Map<MenuItem, Integer> orderedItems;
-
-    public CustomerSession getCustomerSession() {
-        return customerSession;
-    }
-
-    public void setCustomerSession(CustomerSession customerSession) {
-        this.customerSession = customerSession;
-    }
-
-    public Map<MenuItem, Integer> getOrderedItems() {
-        return orderedItems;
-    }
-
-    public void setOrderedItems(Map<MenuItem, Integer> orderedItems) {
-        this.orderedItems = orderedItems;
-    }
 }
